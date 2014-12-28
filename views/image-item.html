@@ -1,0 +1,17 @@
+<div class="image-item">
+
+	<div class="image-item-display">
+		<img ng-src="{{ image.image_original }}">
+	</div>
+
+	<div class="image-item-info">
+
+		Info
+
+		<user-info-small user_id="{{ image.user_id }}"></user-info-small>
+
+		<p>{{ image.created_int | date : 'medium' }}</p>
+
+	</div>
+
+</div>
