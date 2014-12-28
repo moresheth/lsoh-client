@@ -6,9 +6,12 @@
 
 	<div class="image-item-info">
 
-		Info
+		<a ng-href="/images"></a>
 
-		<user-info-small user_id="{{ image.user_id }}"></user-info-small>
+		<div ng-if="image.user" class="image-user-info">
+			<img ng-src="{{ image.user.avatar }}">
+			{{ image.user.username }}
+		</div>
 
 		<p>{{ image.created_int | date : 'medium' }}</p>
 

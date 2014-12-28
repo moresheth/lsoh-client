@@ -1,18 +1,26 @@
 lsohApp.config( ['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
+	$locationProvider.html5Mode(true);
+
 	$routeProvider
 		.when('/', {
-			templateUrl : 'views/home.html',
+			templateUrl: 'views/home.html',
 			controller: 'MainController'
 		})
 		.when('/about', {
-			templateUrl : 'views/about.html',
+			templateUrl: 'views/about.html',
 			controller: 'MainController'
 		})
-		.when('/contact', {
-			templateUrl : 'views/contact.html',
+		.when('/images', {
+			templateUrl: 'views/images/index.html',
 			controller: 'MainController'
 		})
-
-	$locationProvider.html5Mode(true)
+		.when('/images/:image_id', {
+			templateUrl: 'views/images/show.html',
+			controller: 'ImageShowController',
+			controllerAs: 'imageShowCtrl'
+		})
+		.otherwise({
+			redirectTo: '/'
+		});
 }])
