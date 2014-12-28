@@ -11,12 +11,11 @@ body{
 }
 a{
 	color: #444;
-	color: rgba(255,255,255,0.5);
 }
 a:hover,
 a:active,
 a:focus{
-	color: #666;
+	color: #888;
 }
 h1, h2{
 	margin: 20px;
@@ -37,4 +36,7 @@ h1, h2{
 .image-item-info{
 	float: left;
 	margin-left: 20px;
+}
+.image-user-info img{
+	width: 48px;
 }

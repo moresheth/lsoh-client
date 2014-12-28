@@ -1,3 +1,18 @@
-Image
+<div class="image-item">
 
-<image-item image_id="{{ imageShowCtrl.image_id }}"></image-item>
+	<div class="image-item-display">
+		<img ng-src="{{ imageShowCtrl.image.image_original }}">
+	</div>
+
+	<div class="image-item-info">
+
+		<div ng-if="image.user" class="image-user-info">
+			<img ng-src="{{ imageShowCtrl.image.user.avatar }}">
+			{{ imageShowCtrl.image.user.username }}
+		</div>
+
+		<p>{{ imageShowCtrl.image.created_int | date : 'medium' }}</p>
+
+	</div>
+
+</div>
