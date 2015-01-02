@@ -5,8 +5,8 @@ lsohApp.directive('imageList', function() {
 		templateUrl: '/views/image-list.html',
 		controller: 'ImageListController',
 		controllerAs: 'imageListCtrl'
-	}
-})
+	};
+});
 
 lsohApp.directive('imageItem', function() {
 	return {
@@ -15,7 +15,7 @@ lsohApp.directive('imageItem', function() {
 		controller: 'ImageItemController',
 		templateUrl: '/views/image-item.html',
 		link: function(scope, element, attrs, imageItemCtrl) {
-			imageItemCtrl.init( scope, element, attrs )
+			imageItemCtrl.init( scope, element, attrs );
 		}
-	}
-})
+	};
+});

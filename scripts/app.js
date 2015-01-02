@@ -1,1 +1,1 @@
-var lsohApp = angular.module('lsoh', ['ngRoute'])
+var lsohApp = angular.module('lsoh', ['ngRoute', 'ngResource']);

@@ -23,4 +23,4 @@ lsohApp.config( ['$routeProvider', '$locationProvider', function($routeProvider,
 		.otherwise({
 			redirectTo: '/'
 		});
-}])
+}]);
