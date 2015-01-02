@@ -1,9 +1,8 @@
 lsohApp.factory('Image', ['$resource',
 	function($resource) {
 		return $resource('/data/images/:id.json', {}, {
-			query: {
-				method: 'GET',
-				isArray: false
+			get: {
+				cache: true
 			}
 		});
 	}
@@ -12,9 +11,8 @@ lsohApp.factory('Image', ['$resource',
 lsohApp.factory('User', ['$resource',
 	function($resource) {
 		return $resource('/data/users/:id.json', {}, {
-			query: {
-				method: 'GET',
-				isArray: false
+			get: {
+				cache: true
 			}
 		});
 	}
